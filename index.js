@@ -9,7 +9,7 @@ const atividadeCotidianas= "Jogar vôlei"
 let atividadeBaseT="Fazer projeto"
 let atividadeBaseC="Fazer TD"
 let indice= "Urgente"
-let statusAtividade=1
+let statusAtividade="Aguardando"
 let afazeres="Aguardando"
 let afazeresdois="Aguardando"
 //=====================================================================================================
