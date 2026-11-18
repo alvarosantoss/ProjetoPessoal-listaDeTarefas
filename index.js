@@ -1,15 +1,21 @@
 const prompt = require("prompt-sync")()
-
+//Nome do aluno
 const aluno= prompt("Qual o seu nome?")
-console.log(`Olá meu querido ${aluno}`)
+console.log(`Olá meu querido(a) ${aluno}`)
 
-let tarefas= "Aguardando"
+//While utilizado para saber as tarefas do aluno
+let tarefas= []
 let resposta= "Sim"
 
 while(resposta==="Sim"){
-    tarefas= prompt("Digite sua tarefa do dia:")
+    let tarefa= prompt("Digite sua tarefa do dia:")
+    tarefas.push(tarefa)
    resposta= prompt("Deseja adcionar outra tarefa?(sim/não):")
 }
+//Array utilizado para fazer uma lista das atividades
+const lista=[`${tarefas}`]
+console.log(`Sua lista de tarefas é: ${lista}`)
+//Do while utilizado para saber as metas do aluno
    let metaDoDia= "Aguardando"
 
    do{
@@ -26,6 +32,9 @@ while(resposta==="Sim"){
       tempo= tempo+total
    console.log(`Seu tempo de resolução é de ${tempo} horas`)
    }
+
+
+
 
 
 
